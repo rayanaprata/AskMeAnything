@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AskMeAnything" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuE-7l-Eqy">
+                                <rect key="frame" x="69" y="141" width="277" height="28"/>
+                                <color key="tintColor" red="0.6821848949419822" green="0.46982585624319562" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ask me anything...">
+                                        <attributes>
+                                            <color key="NSColor" red="0.30162427230631927" green="0.11114392604409619" blue="0.74875821772309925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="AmericanTypewriter"/>
+                                            <font key="NSOriginalFont" size="14" name="AcademyEngravedLetPlain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkx-8u-l0R">
+                                <rect key="frame" x="107" y="704" width="200" height="60"/>
+                                <color key="backgroundColor" red="0.3016242723" green="0.111143926" blue="0.74875821769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="yKm-si-3Rj"/>
+                                </constraints>
+                                <color key="tintColor" red="0.99508465989999995" green="0.97180061790000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Ask">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="27" name="AmericanTypewriter"/>
+                                                <font key="NSOriginalFont" size="27" name="AmericanTypewriter"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="askButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I7a-Q4-0fj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEf-oz-enI">
+                                <rect key="frame" x="125" y="434.5" width="164.5" height="27"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
+                                <color key="textColor" red="0.68218489490000001" green="0.4698258562" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W08-hd-Z3T">
+                                <rect key="frame" x="57" y="384" width="300" height="128"/>
+                                <color key="backgroundColor" red="0.81354873360000002" green="0.63036139859999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="8XC-Yp-C7x"/>
+                                    <constraint firstAttribute="height" constant="128" id="HAX-Up-rpW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99508465988045658" green="0.97180061787767036" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FEf-oz-enI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6zJ-yN-eEc"/>
+                            <constraint firstItem="Mkx-8u-l0R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="7ch-kX-5TF"/>
+                            <constraint firstItem="W08-hd-Z3T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8um-T4-OjH"/>
+                            <constraint firstItem="VuE-7l-Eqy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="97" id="94S-zT-5Qn"/>
+                            <constraint firstItem="VuE-7l-Eqy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="Jqt-yr-LVd"/>
+                            <constraint firstItem="FEf-oz-enI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SHd-XM-0Tt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VuE-7l-Eqy" secondAttribute="trailing" constant="68" id="SIJ-WK-ZFx"/>
+                            <constraint firstItem="W08-hd-Z3T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WJq-Vv-OHA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mkx-8u-l0R" secondAttribute="bottom" constant="98" id="ZLA-39-N4K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mkx-8u-l0R" secondAttribute="trailing" constant="107" id="duV-qo-JMv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="W08-hd-Z3T" id="OCR-qg-XNz"/>
+                        <outlet property="buttonAsk" destination="Mkx-8u-l0R" id="wBY-bo-pVQ"/>
+                        <outlet property="labelResponse" destination="FEf-oz-enI" id="AHl-vo-Jnl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+</document>
